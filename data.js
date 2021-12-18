@@ -33,9 +33,9 @@ function KeyDict() {
     return Object.assign(node, {word: word});
   }
 
-  this.findWord = function(word, node=this.data) {
-    if(word in node){
-      return true;
+  this.findWord = function(letter, node=this.data) {
+    if(letter in node){
+      return node[letter];
     }else{
       return false;
     }
